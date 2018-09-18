@@ -1,3 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.2'
+ruby '2.3.3'
 gem 'rspec'
+gem 'sinatra'
+gem 'pg', '~> 0.18.4'

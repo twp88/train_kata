@@ -7,8 +7,12 @@ require 'sinatra'
 require_relative 'ticket_office.rb'
 
 post '/reserve' do
-  office = TicketOffice.new()
+  office = TicketOffice.new
   office.make_reservation(request.body)
+end
+
+get '/hi' do
+  'how you doin?'
 end
 
 configure do
